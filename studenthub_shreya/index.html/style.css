@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+
+    background:
+    linear-gradient(rgba(255,245,248,0.9),
+    rgba(255,245,248,0.9)),
+    url("https://images.unsplash.com/photo-1513151233558-d860c5398176");
+
+    background-size:cover;
+    background-attachment:fixed;
+
+    color:#5e4b56;
+}
+
+/* NAVBAR */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 60px;
+
+    background:#ffd6e7;
+
+    position:sticky;
+    top:0;
+
+    z-index:100;
+}
+
+nav h2{
+    color:#ff4f8b;
+}
+
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:#5e4b56;
+    font-weight:600;
+}
+
+/* HERO */
+
+.hero{
+    min-height:90vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:30px;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+
+    font-size:4rem;
+
+    color:#ff4f8b;
+}
+
+.hero p{
+    margin-top:20px;
+
+    font-size:1.2rem;
+
+    max-width:600px;
+}
+
+button{
+    margin-top:30px;
+
+    background:#ff7fb4;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 30px;
+
+    border-radius:30px;
+
+    font-size:1rem;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+    background:#ff4f8b;
+}
+
+/* FEATURES */
+
+.features{
+    padding:100px 10%;
+    text-align:center;
+}
+
+.features h2{
+    margin-bottom:40px;
+    color:#ff4f8b;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:white;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* ABOUT */
+
+.about{
+    padding:100px 10%;
+    text-align:center;
+}
+
+.about h2{
+    color:#ff4f8b;
+    margin-bottom:20px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#ffd6e7;
+
+    padding:20px;
+
+    text-align:center;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+}

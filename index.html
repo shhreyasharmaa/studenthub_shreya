@@ -75,11 +75,70 @@
       schedules, goals and daily life in one place.
     </p>
 
+  </div>
+
   </section>
+
+ <section id="dashboard">
+
+<div class="dashboard-wrapper">
+
+<h2>My Dashboard 🎀</h2>
+<p class="dashboard-subtitle">
+Manage tasks and notes in one place.
+</p>
+
+<div class="dashboard-grid">
+
+<div class="card">
+
+<h3>Task Manager ✨</h3>
+
+<input id="taskInput"
+placeholder="Add a task">
+
+<button
+class="dashboard-btn"
+onclick="addTask()">
+Add Task
+</button>
+
+<ul id="taskList" class="task-list"></ul>
+
+</div>
+
+<div class="card">
+
+<h3>Sticky Notes 💌</h3>
+
+<input
+id="noteTitle"
+placeholder="Title">
+
+<textarea
+id="noteText"
+placeholder="Write your note">
+</textarea>
+
+<button
+class="dashboard-btn"
+onclick="addNote()">
+Add Note
+</button>
+
+<div id="notesContainer" class="notes-grid"></div>
+
+</div>
+
+</div>
+
+</section>
 
   <footer>
     <p>♡ Built by Shreya Sharma ♡</p>
   </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>

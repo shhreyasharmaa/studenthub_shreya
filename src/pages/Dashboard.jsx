@@ -1,5 +1,6 @@
 import TaskManager from "../components/TaskManager";
 import StickyNotes from "../components/StickyNotes";
+import ExpenseTracker from "../components/ExpenseTracker";
 
 function Dashboard() {
   return (
@@ -9,6 +10,7 @@ function Dashboard() {
       <div className="dashboard-grid">
         <TaskManager />
         <StickyNotes />
+        <ExpenseTracker />
       </div>
     </div>
   );

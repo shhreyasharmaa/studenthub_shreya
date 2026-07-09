@@ -362,3 +362,74 @@ textarea {
 grid-template-columns:1fr;
 }
 }
+
+/* Expense Tracker */
+
+.expense-card {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  margin-top: 20px;
+}
+
+.expense-card h2 {
+  color: #ff5f9e;
+  margin-bottom: 15px;
+}
+
+.expense-form{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:20px;
+}
+
+.expense-form input,
+.expense-form select{
+  padding:12px;
+  border-radius:12px;
+  border:none;
+  background:#f6f6f6;
+  font-size:15px;
+}
+
+.expense-form button{
+  background:#ff6ca8;
+  color:white;
+  border:none;
+  padding:12px 18px;
+  border-radius:12px;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.expense-form button:hover{
+  transform:scale(1.05);
+}
+
+.expense-item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px;
+  margin-top:10px;
+  background:#fff4fa;
+  border-radius:12px;
+}
+
+.expense-item button{
+  background:#ff4b6e;
+  color:white;
+  border:none;
+  padding:8px 12px;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.total{
+  margin:15px 0;
+  font-size:18px;
+  font-weight:bold;
+  color:#444;
+}
